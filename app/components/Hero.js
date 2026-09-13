@@ -35,15 +35,15 @@ export default function Hero() {
           {/* CTA Buttons */}
           <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap', marginBottom: 48 }}>
             <a id="hero-cta-consultation" href="#consultation"
-              style={{ padding: '14px 28px', background: '#525CEB', color: '#fff', fontWeight: 600, borderRadius: 8, textDecoration: 'none', border: '1px solid #525CEB', transition: 'all 0.25s ease', display: 'inline-block' }}
-              onMouseEnter={e => { e.target.style.background = '#4338CA'; e.target.style.transform = 'translateY(-3px)'; e.target.style.boxShadow = '0 10px 24px rgba(79,70,229,0.35)'; }}
-              onMouseLeave={e => { e.target.style.background = '#525CEB'; e.target.style.transform = 'translateY(0)'; e.target.style.boxShadow = 'none'; }}
+              style={{ padding: '14px 28px', background: '#C89E47', color: '#111827', fontWeight: 600, borderRadius: 8, textDecoration: 'none', border: '1px solid #C89E47', transition: 'all 0.25s ease', display: 'inline-block' }}
+              onMouseEnter={e => { e.target.style.background = '#B38A36'; e.target.style.transform = 'translateY(-3px)'; e.target.style.boxShadow = '0 10px 24px rgba(179, 138, 54,0.35)'; }}
+              onMouseLeave={e => { e.target.style.background = '#C89E47'; e.target.style.transform = 'translateY(0)'; e.target.style.boxShadow = 'none'; }}
             >
               Get Free Consultation
             </a>
             <a id="hero-cta-services" href="#services"
-              style={{ padding: '14px 28px', background: '#fff', color: '#525CEB', fontWeight: 600, borderRadius: 8, textDecoration: 'none', border: '1px solid #E2E8F0', transition: 'all 0.25s ease', display: 'inline-block' }}
-              onMouseEnter={e => { e.target.style.borderColor = '#525CEB'; e.target.style.transform = 'translateY(-3px)'; e.target.style.boxShadow = '0 8px 20px rgba(0,0,0,0.08)'; }}
+              style={{ padding: '14px 28px', background: '#fff', color: '#C89E47', fontWeight: 600, borderRadius: 8, textDecoration: 'none', border: '1px solid #E2E8F0', transition: 'all 0.25s ease', display: 'inline-block' }}
+              onMouseEnter={e => { e.target.style.borderColor = '#C89E47'; e.target.style.transform = 'translateY(-3px)'; e.target.style.boxShadow = '0 8px 20px rgba(0,0,0,0.08)'; }}
               onMouseLeave={e => { e.target.style.borderColor = '#E2E8F0'; e.target.style.transform = 'translateY(0)'; e.target.style.boxShadow = 'none'; }}
             >
               Explore Services
@@ -59,7 +59,7 @@ export default function Hero() {
                   <CountUpNumber
                     value={stat.value}
                     duration={1800}
-                    style={{ fontSize: '1.75rem', fontWeight: 800, color: '#525CEB', lineHeight: 1 }}
+                    style={{ fontSize: '1.75rem', fontWeight: 800, color: '#C89E47', lineHeight: 1 }}
                   />
                   <span style={{
                     fontSize: '0.8rem', fontWeight: 500, color: '#6B7280', lineHeight: 1.3,

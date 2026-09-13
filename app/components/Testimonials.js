@@ -18,10 +18,10 @@ const stats = [
 
 export default function Testimonials() {
   return (
-    <section style={{ background: '#222222', padding: '80px 0', color: '#fff' }}>
+    <section style={{ background: '#FFFDF7', padding: '80px 0', color: '#111827' }}>
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
         <RevealSection>
-          <span style={{ display: 'inline-block', padding: '6px 12px', background: 'rgba(26,26,46,0.7)', color: '#fff', textTransform: 'uppercase', fontSize: '0.75rem', fontWeight: 700, letterSpacing: 1, borderRadius: 4, marginBottom: 16, border: '1px solid rgba(255,255,255,0.1)' }}>
+          <span style={{ display: 'inline-block', padding: '6px 12px', background: 'rgba(200, 158, 71, 0.15)', color: '#C89E47', textTransform: 'uppercase', fontSize: '0.75rem', fontWeight: 700, letterSpacing: 1, borderRadius: 4, marginBottom: 16, border: '1px solid rgba(0,0,0,0.1)' }}>
             Client Stories
           </span>
           <h2 style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.5rem)', fontWeight: 700, marginBottom: 48, lineHeight: 1.2 }}>
@@ -35,13 +35,13 @@ export default function Testimonials() {
             <RevealSection key={t.id} delay={i * 100}>
               <div id={`testimonial-${t.id}`}
                 style={{ padding: 32, background: 'transparent', border: '1px solid rgba(255,255,255,0.15)', borderRadius: 8, position: 'relative', marginTop: 30, transition: 'border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease' }}
-                onMouseEnter={e => { e.currentTarget.style.borderColor = 'rgba(82,92,235,0.45)'; e.currentTarget.style.transform = 'translateY(-5px)'; e.currentTarget.style.boxShadow = '0 12px 30px rgba(0,0,0,0.3)'; }}
+                onMouseEnter={e => { e.currentTarget.style.borderColor = 'rgba(200, 158, 71,0.45)'; e.currentTarget.style.transform = 'translateY(-5px)'; e.currentTarget.style.boxShadow = '0 12px 30px rgba(0,0,0,0.3)'; }}
                 onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.15)'; e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}
               >
-                <span style={{ position: 'absolute', top: -30, left: 20, fontSize: 60, color: '#525CEB', lineHeight: 1, background: '#222222', padding: '0 10px' }}>&ldquo;</span>
-                <p style={{ fontSize: '1.05rem', marginBottom: 24, color: '#fff', lineHeight: 1.7 }}>{t.quote}</p>
+                <span style={{ position: 'absolute', top: -30, left: 20, fontSize: 60, color: '#C89E47', lineHeight: 1, background: '#FFFDF7', padding: '0 10px' }}>&ldquo;</span>
+                <p style={{ fontSize: '1.05rem', marginBottom: 24, color: '#111827', lineHeight: 1.7 }}>{t.quote}</p>
                 <p style={{ fontWeight: 700, fontSize: '1rem', marginBottom: 4 }}>{t.author}</p>
-                <p style={{ color: '#D1D5DB', fontSize: '0.9rem', margin: 0 }}>{t.title}</p>
+                <p style={{ color: '#4B5563', fontSize: '0.9rem', margin: 0 }}>{t.title}</p>
               </div>
             </RevealSection>
           ))}
@@ -52,11 +52,11 @@ export default function Testimonials() {
           {stats.map((s, i) => (
             <RevealSection key={s.label} delay={i * 80}>
               <div>
-                <div style={{ fontSize: '4rem', fontWeight: 800, lineHeight: 1, marginBottom: 8, color: '#fff' }}>
+                <div style={{ fontSize: '4rem', fontWeight: 800, lineHeight: 1, marginBottom: 8, color: '#111827' }}>
                   <CountUpNumber value={s.number} duration={2000} />
                 </div>
                 <h4 style={{ fontSize: '1.125rem', fontWeight: 700, marginBottom: 8, marginTop: 0 }}>{s.label}</h4>
-                <p style={{ color: '#D1D5DB', fontSize: '0.95rem', margin: 0 }}>{s.desc}</p>
+                <p style={{ color: '#4B5563', fontSize: '0.95rem', margin: 0 }}>{s.desc}</p>
               </div>
             </RevealSection>
           ))}

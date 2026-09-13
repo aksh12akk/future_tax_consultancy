@@ -16,16 +16,16 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" style={{ background: '#1C1C1C', padding: '80px 0', color: '#fff' }}>
+    <section id="services" style={{ background: '#F9F6ED', padding: '80px 0', color: '#111827' }}>
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
         <RevealSection>
-          <span style={{ display: 'inline-block', padding: '6px 12px', background: 'rgba(26,26,46,0.7)', color: '#fff', textTransform: 'uppercase', fontSize: '0.75rem', fontWeight: 700, letterSpacing: 1, borderRadius: 4, marginBottom: 16, border: '1px solid rgba(255,255,255,0.1)' }}>
+          <span style={{ display: 'inline-block', padding: '6px 12px', background: 'rgba(200, 158, 71, 0.15)', color: '#C89E47', textTransform: 'uppercase', fontSize: '0.75rem', fontWeight: 700, letterSpacing: 1, borderRadius: 4, marginBottom: 16, border: '1px solid rgba(0,0,0,0.1)' }}>
             Our Services
           </span>
           <h2 style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.5rem)', fontWeight: 700, marginBottom: 16, lineHeight: 1.2 }}>
             Everything Your Business Needs &mdash; Under One Roof
           </h2>
-          <p style={{ fontSize: '1.125rem', color: '#D1D5DB', maxWidth: 800, marginBottom: 48, lineHeight: 1.7 }}>
+          <p style={{ fontSize: '1.125rem', color: '#4B5563', maxWidth: 800, marginBottom: 48, lineHeight: 1.7 }}>
             From registering your business to filing returns and maintaining books, Future Tax Consultancy covers the full compliance lifecycle.
           </p>
         </RevealSection>
@@ -34,9 +34,9 @@ export default function Services() {
           {services.map((svc, i) => (
             <RevealSection key={svc.id} delay={i * 80}>
               <div id={`service-${svc.id}`}
-                style={{ background: '#2D2D2D', borderRadius: 8, overflow: 'hidden', border: '1px solid rgba(255,255,255,0.05)', transition: 'transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease', height: '100%' }}
-                onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-8px)'; e.currentTarget.style.boxShadow = '0 20px 40px rgba(0,0,0,0.5)'; e.currentTarget.style.borderColor = 'rgba(82,92,235,0.45)'; }}
-                onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.05)'; }}
+                style={{ background: '#FFFFFF', borderRadius: 8, overflow: 'hidden', border: '1px solid rgba(0,0,0,0.05)', transition: 'transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease', height: '100%' }}
+                onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-8px)'; e.currentTarget.style.boxShadow = '0 20px 40px rgba(0,0,0,0.5)'; e.currentTarget.style.borderColor = 'rgba(200, 158, 71,0.45)'; }}
+                onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.borderColor = 'rgba(0,0,0,0.05)'; }}
               >
                 <div style={{ position: 'relative', width: '100%', height: 160 }}>
                   <Image src={svc.image} alt={svc.title} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" style={{ objectFit: 'cover' }} />
@@ -45,8 +45,8 @@ export default function Services() {
                   <h3 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: 16, marginTop: 0 }}>{svc.title}</h3>
                   <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 10 }}>
                     {svc.items.map(item => (
-                      <li key={item} style={{ position: 'relative', paddingLeft: 16, fontSize: '0.95rem', color: '#D1D5DB' }}>
-                        <span style={{ position: 'absolute', left: 0, color: '#fff', fontWeight: 'bold' }}>•</span>
+                      <li key={item} style={{ position: 'relative', paddingLeft: 16, fontSize: '0.95rem', color: '#4B5563' }}>
+                        <span style={{ position: 'absolute', left: 0, color: '#111827', fontWeight: 'bold' }}>•</span>
                         {item}
                       </li>
                     ))}
