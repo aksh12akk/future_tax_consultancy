@@ -3,15 +3,15 @@
 @theme {
   --font-inter: 'Inter', system-ui, -apple-system, sans-serif;
 
-  --color-brand-dark:    #222222;
-  --color-brand-darker:  #1C1C1C;
-  --color-brand-card:    #2D2D2D;
+  --color-brand-dark:    #FFFDF7;
+  --color-brand-darker:  #F9F6ED;
+  --color-brand-card:    #FFFFFF;
   --color-brand-light:   #E4E5FC;
-  --color-accent:        #4F46E5;
-  --color-accent-hover:  #4338CA;
-  --color-accent-light:  #525CEB;
-  --color-yellow-accent: #FDE047;
-  --color-text-muted:    #D1D5DB;
+  --color-accent:        #B38A36;
+  --color-accent-hover:  #B38A36;
+  --color-accent-light:  #C89E47;
+  --color-yellow-accent: #C89E47;
+  --color-text-muted:    #4B5563;
   --color-text-dark:     #111827;
 
   --radius-card:    8px;
@@ -27,9 +27,9 @@ html { scroll-behavior: smooth; }
 
 body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  color: #ffffff;
+  color: #111827;
   line-height: 1.6;
-  background-color: #222222;
+  background-color: #FFFDF7;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -43,28 +43,28 @@ a, button {
 
 /* ── Scrollbar styling ──────────────────── */
 ::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: #1C1C1C; }
+::-webkit-scrollbar-track { background: #F9F6ED; }
 ::-webkit-scrollbar-thumb {
-  background: #525CEB;
+  background: #C89E47;
   border-radius: 10px;
 }
-::-webkit-scrollbar-thumb:hover { background: #4338CA; }
+::-webkit-scrollbar-thumb:hover { background: #B38A36; }
 
 /* ── Input placeholder ─────────────────── */
 input::placeholder,
 textarea::placeholder {
-  color: #4B5563;
+  color: #6B7280;
   transition: color 0.2s;
 }
 input:focus::placeholder,
 textarea:focus::placeholder {
-  color: #6B7280;
+  color: #4B5563;
 }
 
 /* ── Selection color ───────────────────── */
 ::selection {
-  background: rgba(82, 92, 235, 0.4);
-  color: #fff;
+  background: rgba(200, 158, 71, 0.4);
+  color: #111827;
 }
 
 /* ── Page load fade-in ─────────────────── */
