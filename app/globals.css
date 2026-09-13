@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme {
+  --font-inter: 'Inter', system-ui, -apple-system, sans-serif;
+
+  --color-brand-dark:    #222222;
+  --color-brand-darker:  #1C1C1C;
+  --color-brand-card:    #2D2D2D;
+  --color-brand-light:   #E4E5FC;
+  --color-accent:        #4F46E5;
+  --color-accent-hover:  #4338CA;
+  --color-accent-light:  #525CEB;
+  --color-yellow-accent: #FDE047;
+  --color-text-muted:    #D1D5DB;
+  --color-text-dark:     #111827;
+
+  --radius-card:    8px;
+  --radius-card-lg: 12px;
+}
+
+/* ── Base ─────────────────────────────── */
+html { scroll-behavior: smooth; }
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #ffffff;
+  line-height: 1.6;
+  background-color: #222222;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Offset anchors for fixed navbar */
+section { scroll-margin-top: 80px; }
+
+/* ── Global smooth transitions ─────────── */
+a, button {
+  transition: all 0.25s ease;
+}
+
+/* ── Scrollbar styling ──────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #1C1C1C; }
+::-webkit-scrollbar-thumb {
+  background: #525CEB;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover { background: #4338CA; }
+
+/* ── Input placeholder ─────────────────── */
+input::placeholder,
+textarea::placeholder {
+  color: #4B5563;
+  transition: color 0.2s;
+}
+input:focus::placeholder,
+textarea:focus::placeholder {
+  color: #6B7280;
+}
+
+/* ── Selection color ───────────────────── */
+::selection {
+  background: rgba(82, 92, 235, 0.4);
+  color: #fff;
+}
+
+/* ── Page load fade-in ─────────────────── */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+main {
+  animation: fadeIn 0.5s ease forwards;
+}
